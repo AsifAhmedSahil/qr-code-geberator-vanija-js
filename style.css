@@ -77,16 +77,23 @@ form button:active{
 }
 .qr_code_container{
     border: 1px solid var(--primary);
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    display: none;
+    display: flex;
+   
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in height 0.1s ease;
 }
 .qr_code_container.show{
-    border: 1px solid var(--primary);
-    display: flex;
-    justify-content: center;
-    display: none;
+    
+    /* display: flex; */
+    height: 150px;
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in height 0.1s ease;
+    
 }
 .qr_code_container img{
-    height: 150px;
+    height: 100%;
 }
